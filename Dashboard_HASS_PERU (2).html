@@ -371,7 +371,7 @@ function loadFile(file){
 }
 
 function autoLoadExcel(){
-  fetch('https://1drv.ms/x/c/1bf110202255075f/IQA3vflAcY7bSaJqHWDCGKIhAav-diVDNC_bx0FW6Pt8H0k?e=VEO1vZ&download=1')
+  fetch('https://drive.google.com/uc?export=download&id=1nnribx9wm7hyrDHj97pTKJ-7JojdAdrK')
     .then(r=>r.arrayBuffer())
     .then(buf=>{WB=XLSX.read(buf,{type:'array',cellDates:true});initDashboard();})
     .catch(e=>{console.log('Auto-carga fallida, carga manual:',e);});
